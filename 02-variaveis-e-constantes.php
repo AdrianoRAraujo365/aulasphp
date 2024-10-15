@@ -14,7 +14,8 @@
     //variaveis
     $curso = "Programador Web";
     $ano = 2024;
-    $area = "back-End";
+    $area = "Back-End";
+    $empresa = "Cloud of Pants Tecnologia";
 
     //Estamos no Programador Web em 2024.
 
@@ -34,8 +35,12 @@
     //(Usando concatenação [ponto final])
     echo "<p>".AUTOR. " Trabalha na empresa ".EMPRESA."</p>";
 
-
     ?>
+
+    <h2>Saida de dados simplificada/direta</h2>
+    <p>Estamos no <?= $curso?>   em <?=$ano?>  .</p>
+
+    <p><?=AUTOR?> trabalha no empresa <?=$empresa?> .</p>
     
 </body>
 </html>

@@ -50,7 +50,7 @@
             </li>
             <li>senha: <?= $dados["senha"] ?> </li>
 
-            <li>idade: <?= $dados["idade"] ?> </li>
+            <li>idade: <?= $dados["idade"] ?> anos </li>
             <li>cidade: <?= $dados["cidade"] ?> </li>
             <li>telefone fixo: <?= $dados["telefone"][0] ?> </li>
             <li>telefone celular: <?= $dados["telefone"][1] ?> </li>

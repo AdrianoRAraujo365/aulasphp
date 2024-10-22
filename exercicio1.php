@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio</title>
+    <title>Exercicio 01</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 </head>
 
@@ -31,11 +31,11 @@
         // Array associativo
         $dados = [
             //Chave associativa
-            "nome" => "Tiago",
+            "nome" => "Chapolin Colorado",
             "senha" => "123teste",
-            "idade" => 28,
+            "idade" => 30,
             "cidade" => "São Paulo",
-            "telefone" => ["11-2135-0300","11-97888-0405"]
+            "telefone" => ["11-2135-0300","11-91234-5678"]
 
         ];
 

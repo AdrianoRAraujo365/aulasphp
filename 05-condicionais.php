@@ -102,6 +102,8 @@
 
     </div>
 
+    <?php include "redes-sociais.html"?>
+
 
 
 

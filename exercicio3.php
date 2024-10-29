@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio 03</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+
+    <style>
+        li:nth-child(odd) {
+            color: blue;
+        }
+
+        li:nth-child(even) {
+            color: red;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -22,13 +33,12 @@
             for ($i = 0; $i < count($meses); $i++) {
 
             ?>
-                
+
                 <li>
 
-                    <p class="alert alert-success">
-                        <?= $meses[$i] ?>
+                    <?= $meses[$i] ?>
                 </li>
-                </p>
+
 
             <?php
             }
@@ -37,7 +47,6 @@
         </ol>
 
     </div>
-
 
 
 

@@ -17,17 +17,40 @@
     $email = $_POST["email"];
     $nascimento = $_POST["nascimento"];
     $mensagem = $_POST["mensagem"];
+    /* Se um dos campos obrigatórios estiver vazio */
 
-
+    if (empty($nome) || empty($email)) {
     ?>
 
-    <h2>Dados recebidos</h2>
-    <ul>
-        <li>Nome: <?= $nome ?></li>
-        <li>E-mail: <?= $email ?></li>
-        <li>Data de Nascimento: <?= $nascimento ?></li>
-        <li>Mensagem: <?= $mensagem ?></li>
-    </ul>
+        <p style="color: red;">
+            Voce DEVE preencher <b>nome</b> e <b>e-mail</b>!
+
+        </p>
+    <?php
+    } else {
+    ?>
+
+        <h2>Dados recebidos</h2>
+        <ul>
+            <?php  ?>
+            <li>Nome: <?= $nome ?></li>
+            <?php  ?>
+
+            <?php ?>
+            <li>E-mail: <?= $email ?></li>
+            <?php  ?>
+
+            <!-- Verificando se os campos nascimento e mensagem NAO ESTAO VAZIOS. Note o uso do operador ! para inverter a lógica da função empty() -->
+
+            <?php if (!empty($nascimento)) { ?>
+                <li>Data de Nascimento: <?= $nascimento ?></li>
+            <?php } ?>
+
+            <?php if (!empty($mensagem)) { ?>
+                <li>Mensagem: <?= $mensagem ?></li>
+            <?php } ?>
+        </ul>
+    <?php } ?>
 </body>
 
 </html>

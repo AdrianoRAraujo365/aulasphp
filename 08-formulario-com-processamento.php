@@ -22,21 +22,8 @@
 
     <?php
     } else {
-    ?>
 
-
-
-
-
-        <!-- Mantenha o action vazio ao programar o PHP junto com o formulário -->
-
-        <form action="" method="post" autocomplete="off">
-            <label for="nome">Qual o seu nome</label>
-            <input required type="text" name="nome" id="nome">
-            <button name="continuar" type="submit">Continuar</button>
-        </form>
-
-    <?php
+        include "formulario-boas-vindas.html";
     }
     ?>
 </body>
